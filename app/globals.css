@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light theme - with black primary color */
+  --primary: 215 25% 15%; /* Black/dark gray primary */
+  --primary-dark: 215 30% 10%;
+  --secondary: 210 40% 96%;
+  --background: 0 0% 100%;
+  --foreground: 215 25% 15%;
+  --card: 0 0% 100%;
+  --card-foreground: 215 25% 15%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 215 25% 15%;
+  --primary-foreground: 0 0% 98%;
+  --secondary-foreground: 215 25% 15%;
+  --muted: 210 20% 96%;
+  --muted-foreground: 215 25% 40%;
+  --accent: 210 40% 96%;
+  --accent-foreground: 215 25% 15%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 215 20% 90%;
+  --input: 215 20% 90%;
+  --ring: 215 25% 25%;
+  --radius: 0.5rem;
+
+  /* Light theme specific */
+  --header-bg: 0 0% 100%;
+  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  --hover-bg: 215 20% 97%;
+}
+
+.dark {
+  /* Dark theme - with darker black primary */
+  --primary: 215 25% 15%; /* Keeping consistent with light theme */
+  --primary-dark: 215 30% 10%;
+  --secondary: 215 30% 15%;
+  --background: 215 30% 8%; /* Dark blue-gray background */
+  --foreground: 215 20% 95%;
+  --card: 215 30% 12%;
+  --card-foreground: 215 20% 95%;
+  --popover: 215 30% 12%;
+  --popover-foreground: 215 20% 95%;
+  --primary-foreground: 0 0% 98%;
+  --secondary-foreground: 215 20% 95%;
+  --muted: 215 30% 15%;
+  --muted-foreground: 215 20% 70%;
+  --accent: 215 30% 15%;
+  --accent-foreground: 215 20% 95%;
+  --destructive: 0 70% 45%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 215 30% 20%;
+  --input: 215 30% 20%;
+  --ring: 215 25% 25%;
+
+  /* Dark theme specific */
+  --header-bg: 215 30% 10%;
+  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  --hover-bg: 215 30% 18%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    background-image: radial-gradient(circle at 100% 100%, hsla(var(--primary), 0.03) 0%, transparent 50%);
+    background-attachment: fixed;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold tracking-tight;
+  }
+  h1 {
+    @apply text-3xl lg:text-4xl;
+  }
+  h2 {
+    @apply text-2xl lg:text-3xl;
+  }
+  h3 {
+    @apply text-xl lg:text-2xl;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 md:px-6;
+  }
+  .btn-primary {
+    @apply px-4 py-2 bg-primary text-primary-foreground font-medium rounded-md hover:bg-primary/90 transition-colors shadow-sm;
+  }
+  .btn-secondary {
+    @apply px-4 py-2 border border-input bg-background text-foreground font-medium rounded-md hover:bg-accent hover:text-accent-foreground transition-colors shadow-sm;
+  }
+  .card-hover {
+    @apply transition-all duration-200 hover:shadow-lg hover:-translate-y-1 shadow-sm;
+  }
+  .input-field {
+    @apply w-full px-4 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent shadow-sm;
+  }
+
+  /* Enhanced card styling */
+  .enhanced-card {
+    @apply bg-card text-card-foreground rounded-lg border border-border shadow-sm hover:shadow-md transition-all duration-200;
+    box-shadow: var(--card-shadow);
+  }
+
+  /* Enhanced button styling */
+  .enhanced-button {
+    @apply rounded-md font-medium transition-all duration-200;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .enhanced-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .enhanced-button:hover::after {
+    opacity: 1;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.5);
+}
+
+/* Dark mode transitions */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.2s ease;
+}
+
