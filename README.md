@@ -42,6 +42,10 @@ ServiceSathi is a **full-stack platform** designed to bridge the gap between **l
 
 ![sign up page ](https://github.com/user-attachments/assets/ad2b69e0-98f3-4c1b-9412-89aae2ea8e05)
 
+![About us page ](https://github.com/user-attachments/assets/38451df3-b299-46ad-b666-fb0ef4936597)
+![Chatbot ](https://github.com/user-attachments/assets/774a2c3b-0d5a-4974-93e2-f79cdb479f86)
+
+
 
 
 
