@@ -15,10 +15,6 @@ A powerful **Local Service Finder** web application built with **React.js**, **F
 
 ---
 
-> Replace these links with actual screenshots uploaded to your repo and use the URLs from there.
-
----
-
 ## 🧑‍💻 Tech Stack
 
 | Layer         | Technology             |
@@ -30,32 +26,22 @@ A powerful **Local Service Finder** web application built with **React.js**, **F
 
 ---
 
+## 🖼️ Screenshots
+
+| Page             | Screenshot |
+|------------------|------------|
+| **Main Landing Page** | ![Main](https://github.com/user-attachments/assets/68cdeab0-643a-498b-b07e-af0afcdf8557) |
+| **Services Page**     | ![Services](https://github.com/user-attachments/assets/09357421-6a30-4a54-8610-08881d6d38a2) |
+| **Login/Signup Page** | ![Login](https://github.com/user-attachments/assets/e7670f83-9c54-412b-b97f-0b2b9196368b) |
+| **AI Chatbot**        | ![Chatbot](https://github.com/user-attachments/assets/65f6f208-82ba-4f40-ac82-16979ea77bc0) |
+
+---
+
 ## 🚀 Getting Started
 
-### 1. Clone the repository
+### 1. Install Dependencies (Frontend)
 
 ```bash
-git clone https://github.com/Aditya0825-crypto/servicesathi.git
-cd servicesathi
-
-
- MAIN Landing Page
-![image](https://github.com/user-attachments/assets/68cdeab0-643a-498b-b07e-af0afcdf8557)
-
-
-Services page
-![image](https://github.com/user-attachments/assets/09357421-6a30-4a54-8610-08881d6d38a2)
-
-
-login /signup page
-![image](https://github.com/user-attachments/assets/e7670f83-9c54-412b-b97f-0b2b9196368b)
-
-
-Ai Chatbot
-![image](https://github.com/user-attachments/assets/65f6f208-82ba-4f40-ac82-16979ea77bc0)
-
-
-
-
-
-
+cd client
+npm install
+npm start
