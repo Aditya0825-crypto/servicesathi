@@ -15,12 +15,6 @@ A powerful **Local Service Finder** web application built with **React.js**, **F
 
 ---
 
-## 🖼️ Preview
-
-| Home Page | Service Provider Profile | Admin Dashboard |
-|----------|--------------------------|------------------|
-| ![Home](https://via.placeholder.com/300x180.png?text=Home+Page) | ![Profile](https://via.placeholder.com/300x180.png?text=Service+Profile) | ![Dashboard](https://via.placeholder.com/300x180.png?text=Admin+Dashboard) |
-
 > Replace these links with actual screenshots uploaded to your repo and use the URLs from there.
 
 ---
@@ -44,22 +38,22 @@ A powerful **Local Service Finder** web application built with **React.js**, **F
 git clone https://github.com/Aditya0825-crypto/servicesathi.git
 cd servicesathi
 
-images 
-![image](https://github.com/user-attachments/assets/fb417469-3821-4894-8a59-8e44b048ad25)
+
  MAIN Landing Page
-![image](https://github.com/user-attachments/assets/09f90de2-1f08-44a6-874a-b76afd896ed8)
+![image](https://github.com/user-attachments/assets/68cdeab0-643a-498b-b07e-af0afcdf8557)
+
 
 Services page
-![image](https://github.com/user-attachments/assets/a11da3eb-a627-4248-976d-6c3437731af0)
+![image](https://github.com/user-attachments/assets/09357421-6a30-4a54-8610-08881d6d38a2)
+
 
 login /signup page
-![image](https://github.com/user-attachments/assets/6bb0770b-b147-4224-9f3f-521c96bbfd53)
+![image](https://github.com/user-attachments/assets/e7670f83-9c54-412b-b97f-0b2b9196368b)
 
-User Dashboard
-![image](https://github.com/user-attachments/assets/c076137f-d24a-45f9-8e2d-8c6cd5084fa7)
 
 Ai Chatbot
-![image](https://github.com/user-attachments/assets/a5e108d9-d5df-4a82-961f-ff5da2ce5430)
+![image](https://github.com/user-attachments/assets/65f6f208-82ba-4f40-ac82-16979ea77bc0)
+
 
 
 
